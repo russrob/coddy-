@@ -9,6 +9,28 @@
   </head>
 
   <body>
+ <div id="sidebar">
+		<div id="logo">
+			<%= link_to root_path do %>
+				<%= image_tag "logo.png" %>
+			<% end %>
+		</div>
+
+		<ul>
+			<li class="category">Website</li>
+			<li><%= link_to "Blog", root_path %></li>
+			
+		</ul>
+
+		<ul>
+			<li class="category">Social</li>
+			<li><a href="https://twitter.com/rustyrob">Twitter</a></li>
+			<li><a href="http://instagram.com/russrob23">Instagram</a></li>
+			<li><a href="https://github.com/russrob">Github</a></li>
+			<li><a href="mailto:russrob23@gmail.com">Email</a></li>
+		</ul>
+		<p class="sign_in"> Admin in</p>
+  </div>
     <%= yield %>
   </body>
 </html>
